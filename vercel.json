@@ -1,0 +1,26 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "app/api/python/route.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxDuration": 60
+            }
+        },
+        {
+            "src": "package.json",
+            "use": "@vercel/next"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/extract",
+            "dest": "app/api/python/route.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ]
+} 
