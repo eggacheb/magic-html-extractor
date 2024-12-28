@@ -57,3 +57,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Allow wheel packages in packages/wheels
+!packages/wheels/
+!packages/wheels/*.whl
