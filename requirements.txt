@@ -2,10 +2,6 @@
 fastapi==0.104.1
 uvicorn==0.24.0
 python-multipart==0.0.6
-charset-normalizer==3.4.1
 lxml==5.1.1
 numpy==2.2.1
-py-asciimath==0.3.0
-urllib3==2.3.0
-chardet==5.2.0
-Brotli==1.1.0 
+py-asciimath==0.3.0 
