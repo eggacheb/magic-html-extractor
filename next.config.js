@@ -8,6 +8,14 @@ const nextConfig = {
     }
     return config;
   },
+  // Enable static optimization
+  output: 'standalone',
+  // Ensure CSS/SASS modules are enabled
+  sassOptions: {
+    includePaths: ['./styles'],
+  },
+  // Configure PostCSS
+  postcss: true,
 }
 
 module.exports = nextConfig 
